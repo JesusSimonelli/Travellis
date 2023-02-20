@@ -1,0 +1,15 @@
+.project_details{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+}
+
+.content{
+    margin: 10rem auto;
+}
+
+@media screen and (max-width:1450px) {
+    .project_details{
+        grid-template-columns: 1fr;
+    }
+}
+

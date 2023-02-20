@@ -1,0 +1,150 @@
+.singup{
+    width: 100%;
+    height: 89vh;
+    background-color: #fff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.texts{
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.singup__form{
+    background-image:linear-gradient(105deg, rgba(59, 201, 219, .8) 0% , rgba(59, 201, 219, 0.8) 50%, transparent 50%), url('../../img/formBG.jpg');
+    background-size: cover;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 3rem 4rem rgba(0,0,0,0.2);
+    padding: 2rem;
+
+    width: 80%;
+    height: 60rem;
+    margin: 2rem auto;
+}
+
+.form{
+    width: 50%;
+    padding: 2rem; 
+    margin: 10rem 10rem;   
+}
+.file{
+    width: 15rem;
+    color: transparent;
+}
+.file::-webkit-file-upload-button{
+    visibility: hidden;
+}
+.file::before{
+    content: "Select your photo";
+    color: black;
+    display: block;
+    background-color: #e9fbff;
+    padding: 1.5rem 2rem;
+    border-radius:7px;
+    outline: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.file:hover::before{
+    background-color: #fff;
+}
+.file:hover::before{
+    background-color: #fff;
+}
+.file:active{
+    color: antiquewhite;
+}
+
+.input{
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #e9fbff;
+    display: block;
+    border-bottom:  3px solid transparent;
+    width: 60%;
+    transition: all .3s;
+    margin-top: 1rem;
+}  
+
+.input:focus{
+    outline: none;
+    box-shadow: 0 2rem 3rem rgba(0,0,0,0.1);
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.input:focus:invalid{
+    border-bottom: 3px solid red;
+}
+
+.input::-webkit-input-placeholder{
+    color: var(--text-color);
+}
+
+.label{
+    font-size: 1.6rem;
+    margin-left: 2rem;
+    margin-top: .7rem;
+    display: block;
+    transition: all .3s;
+    color: #fff;
+    font-weight: 400;
+    transition: all .2s;
+}
+
+.input:placeholder-shown + .label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+}
+
+.group button{
+    background-color: #fff;
+    color: var(--primary-color);
+}
+
+@media screen and (max-width:1450px) {
+    
+}
+@media screen and (max-width:1050px) {
+    .form{
+        margin: 5rem 2rem;
+        width: 100%;
+    }
+
+    .input {
+        width: 90%;
+    }
+}
+@media screen and (max-width:760px) {
+    .singup{
+        padding: 0;
+    }
+    
+    .singup__form{
+        height: 60rem;
+        margin-top: -10rem;
+        width: 100%;
+        margin: 0;
+    }
+
+    .text{
+        width: 100%;
+    }
+}
+@media screen and (max-width:550px) {
+    .heading-1{
+        font-size: 1rem;
+    }
+}

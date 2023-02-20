@@ -1,0 +1,26 @@
+.dashboard{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width:1450px) {
+   .dashboard{
+    grid-template-columns: 1fr;
+   }
+    }
+    @media screen and (max-width:1050px) {
+        
+        
+    }
+    @media screen and (max-width:760px) {
+        
+    }
+    
+    @media screen and (max-width:550px) {
+      
+    }
