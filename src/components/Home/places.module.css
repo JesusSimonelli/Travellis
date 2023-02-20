@@ -1,0 +1,135 @@
+.places{
+    margin-top: -12rem;
+    padding: 2rem;
+    margin-bottom: 6rem;
+}
+
+@media screen and (max-width:1050px) {
+    .places{
+        margin: -6rem auto;
+    }
+}
+.places h1{
+    margin-bottom: -10rem;
+}
+.grid{
+    padding: 13rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-gap: 7rem;
+}
+
+.place{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap:2rem;
+    background-color: #fafcfe;
+    border-radius: 8px;
+    max-width: 550px;
+}
+
+@media screen and (max-width: 1050px) {
+    .place{
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 760px) {
+    .places{
+        margin-top: -25em;
+    }
+}
+@media screen and (max-width: 550px) {
+    .places{
+        margin-top: -20rem;
+        padding: 0;
+        margin-bottom: 0;
+    }
+    .places h1{
+       font-size: 2.5rem;
+       margin-bottom: 0;
+       letter-spacing: 1.5rem;
+       text-align: center;
+    }
+    .grid{
+        padding: 0;
+    }
+
+    .place{
+       width: 100%;
+    }
+    .place h3{
+        font-size: 1.5rem;
+        width: 80%;
+    }
+
+    .img{
+        height: 15rem;
+    }
+}
+
+.img{
+    width: 100%;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    z-index: 1;
+    height: 30rem;  
+   
+   
+}
+
+.place h3{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    z-index: 2;
+    font-size: 3rem;
+    align-self: end;
+    justify-self: center;
+    padding: 0.5rem 0.3rem;
+
+    width: 70%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    
+}
+
+.name, .language, .location, .airports{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.name{
+    grid-column: 1/2;
+}
+
+.location{
+    grid-column: 2/3;
+}
+
+.language{
+    grid-column: 1/2;
+}
+
+.airports{
+    grid-column: 2/3;
+}
+
+.svg{
+    height: 3.5rem;
+    width: 4rem;
+}
+
+.paragraphy{
+    background-color: var(--primary-color);
+    align-self: center;
+    justify-self: center;
+    grid-column: 1/-1;
+    width: 50%;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+
+    font-size: 1.8rem;
+}

@@ -1,0 +1,33 @@
+.project_filter{
+    margin: 3rem auto;
+}
+
+.nav{
+    display: flex;
+    padding: 1rem;
+}
+
+.button{
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    font-weight: 800;
+    font-size: 3rem;
+    cursor: pointer;
+    color: var(--primary-color-dark);
+    transition: all .3s;
+    padding: 0 1rem;
+}
+
+.button:hover{
+    background-color:var(--primary-color-dark);
+    color: #fff;
+}
+
+.button:not(:last-child){
+    border-right: 2px solid var(--primary-color);
+}
+.active{
+    background-color:var(--primary-color-dark) ;
+    color: #fff;
+}

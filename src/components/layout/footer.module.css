@@ -1,0 +1,37 @@
+.footer{
+    background-color: var(--primary-color-dark);
+    height: 15rem;
+}
+.nav{
+    height: 10rem;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.item{
+    font-size: 2rem;
+    margin-left: 2rem;
+    text-transform: uppercase;
+}
+
+.link:link,
+.link:visited{
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    text-align:center;
+    padding: 1.5rem;
+    transition: all .2s;
+}
+.link:hover,
+.link:active{
+    border-bottom:4px solid #fff ;
+}
+
+.copyright{
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+}
